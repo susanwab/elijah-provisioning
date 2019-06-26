@@ -44,7 +44,7 @@ def check_system_support():
     with settings(hide('everything'), warn_only=True):
         os_dist = run(cmd)
         if os_dist != 'trusty' and os_dist != "xenial":
-            msg = "Support only Ubuntu Precise (14.04) or Ubuntu Trusty (16.04)"
+            msg = "Support only Ubuntu Precise (18.04) or Ubuntu Trusty (19.04)"
             abort(msg)
         return os_dist
     return None
